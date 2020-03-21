@@ -365,7 +365,7 @@ svg:not(:root) {
 /* 3.0 Links
 ================================================== */
 a {
-	color: #0C4C8A;
+	color: #fdaa34;
 	cursor:pointer;
 	text-decoration: none;
 	transition-property: color;
@@ -2237,6 +2237,7 @@ footer .social-links li a[href*="linkedin.com"] {
 .entry-content {
 	display: block;
 	margin: 0 0 20px;
+	font-size: 18px;
 }
 
 .entry-content p:last-child {
@@ -5551,4 +5552,42 @@ div.bbp-template-notice, div.indicator-hint {
 }
 .main-header .header-search {
 	margin: 0;
+}
+
+.nav-links {
+	margin-top: 25px;
+}
+.nav-links .nav-previous .meta-nav, .nav-links .nav-next .meta-nav {
+	font-weight: bold;
+}
+.nav-links a {
+	font-size: 18px;
+}
+.nav-links .nav-previous, .nav-links .nav-next {
+	max-width: 49.99%;
+	padding: 0 4px 0 4px;
+}
+
+.author-info-box {
+	padding: 15px;
+	border: 2px solid #ededed;
+}
+.author-info-box .author-avatar {
+	float: left;
+}
+.author-info-box .author-desc {
+	margin-left: 111px;
+}
+.author-info-box .auth-bio {
+	margin: 8px 0 12px 0;
+}
+.author-info-box .auth-name {
+	font-size: 16px;
+	font-weight: bold;
+}
+.author-info-box .menu-item {
+	border: 1px solid #bfbfbf;
+}
+.author-info-box .menu-item + .menu-item {
+	margin-left: 4px;
 }

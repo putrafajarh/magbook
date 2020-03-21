@@ -80,6 +80,55 @@ $magbook_display_page_single_featured_image = $magbook_settings['magbook_display
 						'echo'              => 1
 					) ); ?>
 				</article><!-- end .post -->
+				<div class="author-info-box">
+					<a class="author-avatar" href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ) ); ?>">
+						<?php echo get_avatar( get_the_author_meta( 'ID' ), 96, '', get_the_author(), array() ) ?>
+					</a>
+					<div class="author-desc">
+						<a class="auth-name" href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ) ); ?>">
+							<?php echo get_the_author(); ?>
+						</a>
+						<div class="auth-bio">
+							<?php echo get_the_author_meta( 'description' ) ?>
+						</div>
+						<div class="social-links clearfix">
+							<ul>
+								<?php
+								$authorID = get_the_author_meta('ID');
+								$instagram = get_the_author_meta('instagram', $authorID);
+								$linkedin = get_the_author_meta('linkedin', $authorID);
+								$facebook = get_the_author_meta('facebook', $authorID);
+								$twitter = get_the_author_meta('twitter', $authorID);
+								$soundcloud = get_the_author_meta('soundcloud', $authorID);
+								$youtube = get_the_author_meta('youtube', $authorID);
+								$pinterest = get_the_author_meta('pinterest', $authorID);
+								if ($instagram) {
+									echo '<li class="menu-item"><a href="'.$instagram.'" target="_blank" rel="nofollow"><span class="screen-reader-text">instagram</span></a></li>';
+								}
+								if ($facebook) {
+									echo '<li class="menu-item"><a href="'.$facebook.'" target="_blank" rel="nofollow"><span class="screen-reader-text">facebook</span></a></li>';
+								}
+								if ($twitter) {
+									echo '<li class="menu-item"><a href="'.$twitter.'" target="_blank" rel="nofollow"><span class="screen-reader-text">twitter</span></a></li>';
+								}
+								if ($linkedin) {
+									echo '<li class="menu-item"><a href="'.$linkedin.'" target="_blank" rel="nofollow"><span class="screen-reader-text">linkedin</span></a></li>';
+								}
+								if ($youtube) {
+									echo '<li class="menu-item"><a href="'.$youtube.'" target="_blank" rel="nofollow"><span class="screen-reader-text">youtube</span></a></li>';
+								}
+								if ($soundcloud) {
+									echo '<li class="menu-item"><a href="'.$soundcloud.'" target="_blank" rel="nofollow"><span class="screen-reader-text">soundcloud</span></a></li>';
+								}
+								if ($pinterest) {
+									echo '<li class="menu-item"><a href="'.$pinterest.'" target="_blank" rel="nofollow"><span class="screen-reader-text">pinterest</span></a></li>';
+								}
+								?>
+							</ul>
+						</div>
+					</div>
+					<div style="clear: both;"></div>
+				</div>
 				<?php
 				if ( comments_open() || get_comments_number() ) {
 					comments_template();
