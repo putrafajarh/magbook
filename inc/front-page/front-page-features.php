@@ -57,10 +57,6 @@ function magbook_frontpage_feature_news(){
 																		esc_attr( get_the_time(get_option( 'date_format' )) ),
 																		esc_attr( get_the_time(get_option( 'date_format' )) )
 																	);
-													if ( comments_open()  && $entry_format_meta_blog != 'hide-comments') { ?>
-															<span class="comments">
-															<?php comments_popup_link( __( '<i class="fa fa-comment-o"></i> No Comments', 'magbook' ), __( '<i class="fa fa-comment-o"></i> 1 Comment', 'magbook' ), __( '<i class="fa fa-comment-o"></i> % Comments', 'magbook' ), '', __( 'Comments Off', 'magbook' ) ); ?> </span>
-													<?php }
 													echo  '</div> <!-- end .entry-meta -->';
 												} ?>
 											</header>

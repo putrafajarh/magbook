@@ -1748,7 +1748,7 @@ video#wp-custom-header-video {
 	content: '\f09a';
 }
 
-.social-links li a[href*="facebook.com"]:hover {
+.social-links li a[href*="facebook.com"] {
 	color: #3B5998;
 }
 
@@ -1756,7 +1756,7 @@ video#wp-custom-header-video {
 	content: '\f099';
 }
 
-.social-links li a[href*="twitter.com"]:hover {
+.social-links li a[href*="twitter.com"] {
 	color: #33CCFF;
 }
 
@@ -1764,7 +1764,7 @@ video#wp-custom-header-video {
 	content: '\f2b3';
 }
 
-.social-links li a[href*="plus.google.com"]:hover {
+.social-links li a[href*="plus.google.com"] {
 	color: #DF4B38;
 }
 
@@ -1772,7 +1772,7 @@ video#wp-custom-header-video {
 	content: '\f231';
 }
 
-.social-links li a[href*="pinterest.com"]:hover {
+.social-links li a[href*="pinterest.com"] {
 	color: #CB2027;
 }
 
@@ -1780,7 +1780,7 @@ video#wp-custom-header-video {
 	content: '\f17d';
 }
 
-.social-links li a[href*="dribbble.com"]:hover {
+.social-links li a[href*="dribbble.com"] {
 	color: #F26798;
 }
 
@@ -1788,7 +1788,7 @@ video#wp-custom-header-video {
 	content: '\f16d';
 }
 
-.social-links li a[href*="instagram.com"]:hover {
+.social-links li a[href*="instagram.com"] {
 	color: #8E6051;
 }
 
@@ -1796,7 +1796,7 @@ video#wp-custom-header-video {
 	content: '\f16e';
 }
 
-.social-links li a[href*="flickr.com"]:hover {
+.social-links li a[href*="flickr.com"] {
 	color: #0063DB;
 }
 
@@ -1804,8 +1804,11 @@ video#wp-custom-header-video {
 	content: '\f0e1';
 }
 
-.social-links li a[href*="linkedin.com"]:hover {
+.social-links li a[href*="linkedin.com"] {
 	color: #007BB6;
+}
+.social-links li a:hover {
+	color: #666;
 }
 
 /* 17.0 Navigation
@@ -3982,7 +3985,6 @@ html[xmlns] .feature-news-slider .slides {
 }
 
 .site-info .social-links {
-	border-bottom: 1px solid #333333;
 	float: none;
 	text-align: center;
 }
@@ -4006,15 +4008,14 @@ html[xmlns] .feature-news-slider .slides {
 }
 
 .copyright-wrap {
-	padding: 30px 0 10px;
+	padding: 0 0 10px;
 }
 
 .site-info .copyright {
 	color: #666;
 	font-size: 14px;
-	float: left;
 	line-height: 1.666;
-	text-align: left;
+	text-align: center;
 	margin-bottom: 15px;
 }
 
@@ -5493,3 +5494,5 @@ div.bbp-template-notice, div.indicator-hint {
 		padding: 0;
 	}
 }
+
+

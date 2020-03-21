@@ -107,11 +107,7 @@ class Magbook_tab_Widgets extends WP_Widget {
 																esc_attr( get_the_time(get_option( 'date_format' )) ),
 																esc_attr( get_the_time(get_option( 'date_format' )) )
 															);
-
-											if ( comments_open() ) { ?>
-													<span class="comments">
-													<?php comments_popup_link( __( '<i class="fa fa-comment-o"></i> No Comments', 'magbook' ), __( '<i class="fa fa-comment-o"></i> 1 Comment', 'magbook' ), __( '<i class="fa fa-comment-o"></i> % Comments', 'magbook' ), '', __( 'Comments Off', 'magbook' ) ); ?> </span>
-											<?php } ?>
+											?>
 										</div> <!-- end .mb-entry-meta -->
 									</div> <!-- end .mb-content -->
 								</div><!-- end .mb-post -->
