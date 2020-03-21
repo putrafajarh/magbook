@@ -345,25 +345,26 @@ function add_author_meta() {
     }
     if ( is_page() || is_home() || is_category() || is_tag() ) {
     	echo "<meta name=\"author\" content=\"Triasse\" />";
-    }
+	}
+	if ( is_home() ) {
+		echo "<meta name=\"author\" content=\"Kumpulan artikel kesehatan, gaya hidup serta dunia medis terkini yang terpercaya agar kualitas hidup Anda lebih baik. Menjaga lebih baik daripada mengobati, Bukan?\" />";
+	}
 }
 add_action( 'wp_enqueue_scripts', 'add_author_meta' );
 
-function magbook_yoast_canonical_pagination( $canonical ) {
+function magbook_yoast_canonical_pagination( $string ) {
+	
 	if ( is_paged() ) {
-
-		return preg_replace("/page\/([0-9]+)\//", "", $canonical);
+		$string = preg_replace("/page\/([0-9]+)\//", "", $string);
+		return $string;
 	}
-	return $canonical;
+	return $string;
 }
-add_filter( 'wpseo_canonical', 'magbook_yoast_canonical_pagination' );
+add_filter( 'wpseo_canonical', 'magbook_yoast_canonical_pagination');
 
 function magbook_yoast_robots( $string ) {
 	if ( is_home() || is_front_page() ) {
     	return null;
-	}
-	if ( is_paged() ) {
-		return 'noindex, follow';
 	}
 	return null;
 }
