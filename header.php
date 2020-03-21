@@ -230,7 +230,7 @@ wp_head(); ?>
 
 	<!-- Main Page Start ============================================= -->
 	<div id="site-content-contain" class="site-content-contain">
-		<div id="content" class="site-content">
+		<div id="content" class="site-content" data-sticky-container>
 		<?php
 		if(is_front_page()){
 

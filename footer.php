@@ -86,6 +86,11 @@ $footer_column = $magbook_settings['magbook_footer_column_section'];
 </footer> <!-- end #colophon -->
 </div><!-- end .site-content-contain -->
 </div><!-- end #page -->
+<script>
+var sticky = new Sticky('#secondary', {
+	marginTop: 100
+});
+</script>
 <?php wp_footer(); ?>
 </body>
 </html>
