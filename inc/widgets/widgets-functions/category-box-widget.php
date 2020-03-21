@@ -168,10 +168,6 @@ class Magbook_category_box_Widgets extends WP_Widget {
 																	esc_attr( get_the_time(get_option( 'date_format' )) ),
 																	esc_attr( get_the_time(get_option( 'date_format' )) )
 																);
-												if ( comments_open()) { ?>
-														<span class="comments">
-														<?php comments_popup_link( __( '<i class="fa fa-comment-o"></i> No Comments', 'magbook' ), __( '<i class="fa fa-comment-o"></i> 1 Comment', 'magbook' ), __( '<i class="fa fa-comment-o"></i> % Comments', 'magbook' ), '', __( 'Comments Off', 'magbook' ) ); ?> </span>
-												<?php }
 												echo  '</div> <!-- end .entry-meta -->';
 											} ?>
 								</header>
