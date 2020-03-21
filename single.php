@@ -17,7 +17,7 @@ $magbook_display_page_single_featured_image = $magbook_settings['magbook_display
 				the_post(); ?>
 				<article id="post-<?php the_ID(); ?>" <?php post_class();?>>
 					<?php if(has_post_thumbnail() && $magbook_display_page_single_featured_image == 0 ){ ?>
-						<div class="post-image-content">
+						<div class="post-image-content"> 
 							<figure class="post-featured-image">
 								<?php the_post_thumbnail(); ?>
 							</figure>
@@ -26,9 +26,11 @@ $magbook_display_page_single_featured_image = $magbook_settings['magbook_display
 					$magbook_entry_meta_single = $magbook_settings['magbook_entry_meta_single']; ?>
 					<header class="entry-header">
 						<?php if($magbook_entry_meta_single!='hide'){ ?>
-							<div class="entry-meta">
-								<?php do_action('magbook_post_categories_list_id'); ?>
-							</div>
+							<?php
+								if ( function_exists('yoast_breadcrumb') ) {
+								yoast_breadcrumb( '<p id="breadcrumbs">','</p>' );
+								}
+							?>
 							<?php } ?>
 							<h1 class="entry-title"><?php the_title();?></h1> <!-- end.entry-title -->
 							<?php if($magbook_entry_meta_single!='hide'){

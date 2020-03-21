@@ -166,7 +166,7 @@ class Magbook_category_box_Widgets extends WP_Widget {
 												printf( '<span class="posted-on"><a href="%1$s" title="%2$s"><i class="fa fa-calendar-o"></i> %3$s</a></span>',
 																	esc_url(get_the_permalink()),
 																	esc_attr( get_the_time(get_option( 'date_format' )) ),
-																	esc_attr( get_the_time(get_option( 'date_format' )) )
+																	esc_attr( magbook_time_ago() )
 																);
 												echo  '</div> <!-- end .entry-meta -->';
 											} ?>
