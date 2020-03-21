@@ -328,7 +328,8 @@
 		cursor: pointer;
 		display: inline-block;
 		font-size: 0;
-		margin: 5px auto 0 90px;
+		margin: 0;
+		float: left;
 		padding: 20px 0;
 		width: 30px;
 	}
@@ -616,7 +617,7 @@
 	}
 
 	.header-search, .header-search-x {
-		top: 12px;
+		top: 4px;
 	}
 
 	.show-menu-toggle {

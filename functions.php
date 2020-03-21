@@ -343,10 +343,7 @@ function add_author_meta() {
         $author = get_the_author_meta('display_name', $post->post_author);
         echo '<meta name="author" content="'.$author.'" />';
     }
-    if ( is_page() ) {
-    	echo "<meta name=\"author\" content=\"Triasse\" />";
-    }
-    if ( is_home() ) {
+    if ( is_page() || is_home() || is_category() || is_tag() ) {
     	echo "<meta name=\"author\" content=\"Triasse\" />";
     }
 }
