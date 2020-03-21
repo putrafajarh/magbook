@@ -16,13 +16,7 @@ $magbook_display_page_single_featured_image = $magbook_settings['magbook_display
 			while( have_posts() ) {
 				the_post(); ?>
 				<article id="post-<?php the_ID(); ?>" <?php post_class();?>>
-					<?php if(has_post_thumbnail() && $magbook_display_page_single_featured_image == 0 ){ ?>
-						<div class="post-image-content"> 
-							<figure class="post-featured-image">
-								<?php the_post_thumbnail(); ?>
-							</figure>
-						</div><!-- end.post-image-content -->
-					<?php }
+					<?php
 					$magbook_entry_meta_single = $magbook_settings['magbook_entry_meta_single']; ?>
 					<header class="entry-header">
 						<?php if($magbook_entry_meta_single!='hide'){ ?>
@@ -34,13 +28,15 @@ $magbook_display_page_single_featured_image = $magbook_settings['magbook_display
 							<?php } ?>
 							<h1 class="entry-title"><?php the_title();?></h1> <!-- end.entry-title -->
 							<?php if($magbook_entry_meta_single!='hide'){
-								echo  '<div class="entry-meta">';
-									echo '<span class="author vcard"><a href="'.get_author_posts_url( get_the_author_meta( 'ID' ) ).'" title="'.the_title_attribute('echo=0').'"><i class="fa fa-user-o"></i> ' .esc_attr(get_the_author()).'</a></span>';
-									printf( '<span class="posted-on"><a href="%1$s" title="%2$s"><i class="fa fa-calendar-o"></i> %3$s</a></span>',
-													esc_url(get_the_permalink()),
-													esc_attr( get_the_time(get_option( 'date_format' )) ),
-													esc_attr( get_the_time(get_option( 'date_format' )) )
-												);
+								echo  '<div class="entry-meta">'; ?>
+								<span class="entry-author">
+									Penulis: <a class="auth-name" href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ) ); ?>"><?php echo get_the_author(); ?></a>
+								</span>
+								<?php printf( '<span class="posted-on"><a href="%1$s" title="%2$s"><i class="fa fa-calendar-o"></i> %3$s</a></span>',
+									esc_url(get_the_permalink()),
+									esc_attr( get_the_time(get_option( 'date_format' )) ),
+									esc_attr( get_the_time(get_option( 'date_format' )) )
+								);
 								if ( comments_open()) { ?>
 										<span class="comments">
 										<?php comments_popup_link( __( '<i class="fa fa-comment-o"></i> No Comments', 'magbook' ), __( '<i class="fa fa-comment-o"></i> 1 Comment', 'magbook' ), __( '<i class="fa fa-comment-o"></i> % Comments', 'magbook' ), '', __( 'Comments Off', 'magbook' ) ); ?> </span>
@@ -57,10 +53,19 @@ $magbook_display_page_single_featured_image = $magbook_settings['magbook_display
 								}
 								if(!empty($tag_list)){ ?>
 									<span class="tag-links">
-										<?php   echo get_the_tag_list(); ?>
+										<?php echo get_the_tag_list("", ", "); ?>
 									</span> <!-- end .tag-links -->
 								<?php }
-								echo  '</div> <!-- end .entry-meta -->';
+								echo  '</div> <!-- end .entry-meta -->';?>
+							<div class="entry-image">
+							<?php if(has_post_thumbnail() && $magbook_display_page_single_featured_image == 0 ){ ?>
+								<div class="post-image-content"> 
+									<figure class="post-featured-image">
+										<?php the_post_thumbnail(); ?>
+									</figure>
+								</div><!-- end.post-image-content -->
+							<?php }
+							echo '</div>';
 							} ?>
 					</header> <!-- end .entry-header -->
 					<div class="entry-content">
