@@ -258,11 +258,6 @@ function magbook_category_sliders() {
 											esc_attr( get_the_time(get_option( 'date_format' )) ),
 											esc_attr( get_the_time(get_option( 'date_format' )) )
 										);
-
-						if ( comments_open()) { ?>
-								<span class="comments">
-								<?php comments_popup_link( __( '<i class="fa fa-comment-o"></i> No Comments', 'magbook' ), __( '<i class="fa fa-comment-o"></i> 1 Comment', 'magbook' ), __( '<i class="fa fa-comment-o"></i> % Comments', 'magbook' ), '', __( 'Comments Off', 'magbook' ) ); ?> </span>
-						<?php }
 						echo  '</div> <!-- end .entry-meta -->';
 					}
 					echo  '</div><!-- end .slider-text-content -->';
@@ -310,12 +305,7 @@ function magbook_category_sliders() {
 															esc_url(get_the_permalink()),
 															esc_attr( get_the_time(get_option( 'date_format' )) ),
 															esc_attr( get_the_time(get_option( 'date_format' )) )
-														); ?>
-
-										<?php if ( comments_open()) { ?>
-												<span class="comments">
-												<?php comments_popup_link( __( '<i class="fa fa-comment-o"></i> No Comments', 'magbook' ), __( '<i class="fa fa-comment-o"></i> 1 Comment', 'magbook' ), __( '<i class="fa fa-comment-o"></i> % Comments', 'magbook' ), '', __( 'Comments Off', 'magbook' ) ); ?> </span>
-										<?php }
+														);
 										echo  '</div> <!-- end .entry-meta -->';
 									} ?>
 								</header>
