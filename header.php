@@ -44,12 +44,6 @@ wp_head(); ?>
 					<div class="top-bar">
 						<div class="wrap">
 							<?php
-							if( $magbook_settings['magbook_current_date'] ==0) { ?>
-								<div class="top-bar-date">
-									<span><?php echo date_i18n(__('l, F d, Y','magbook')); ?></span>
-								</div>
-							<?php }
-
 						 	if( is_active_sidebar( 'magbook_header_info' )){
 								dynamic_sidebar( 'magbook_header_info' );
 							}

@@ -1600,7 +1600,7 @@ img#wpstats {
 }
 
 .is-sticky #sticky-header {
-	background-color: rgba(255, 255, 255, 0.7);
+	background-color: rgba(255, 255, 255, 1);
 	-webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
 	-moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
   	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
@@ -1748,7 +1748,10 @@ video#wp-custom-header-video {
 	content: '\f09a';
 }
 
-.social-links li a[href*="facebook.com"] {
+footer .social-links li a[href*="facebook.com"] {
+	color: #3B5998;
+}
+.social-links li a[href*="facebook.com"]:hover {
 	color: #3B5998;
 }
 
@@ -1756,7 +1759,10 @@ video#wp-custom-header-video {
 	content: '\f099';
 }
 
-.social-links li a[href*="twitter.com"] {
+footer .social-links li a[href*="twitter.com"] {
+	color: #33CCFF;
+}
+.social-links li a[href*="twitter.com"]:hover {
 	color: #33CCFF;
 }
 
@@ -1764,7 +1770,10 @@ video#wp-custom-header-video {
 	content: '\f2b3';
 }
 
-.social-links li a[href*="plus.google.com"] {
+footer .social-links li a[href*="plus.google.com"] {
+	color: #DF4B38;
+}
+.social-links li a[href*="plus.google.com"]:hover {
 	color: #DF4B38;
 }
 
@@ -1772,7 +1781,10 @@ video#wp-custom-header-video {
 	content: '\f231';
 }
 
-.social-links li a[href*="pinterest.com"] {
+footer .social-links li a[href*="pinterest.com"] {
+	color: #CB2027;
+}
+.social-links li a[href*="pinterest.com"]:hover {
 	color: #CB2027;
 }
 
@@ -1780,7 +1792,10 @@ video#wp-custom-header-video {
 	content: '\f17d';
 }
 
-.social-links li a[href*="dribbble.com"] {
+footer .social-links li a[href*="dribbble.com"] {
+	color: #F26798;
+}
+.social-links li a[href*="dribbble.com"]:hover {
 	color: #F26798;
 }
 
@@ -1788,7 +1803,10 @@ video#wp-custom-header-video {
 	content: '\f16d';
 }
 
-.social-links li a[href*="instagram.com"] {
+footer .social-links li a[href*="instagram.com"] {
+	color: #8E6051;
+}
+.social-links li a[href*="instagram.com"]:hover {
 	color: #8E6051;
 }
 
@@ -1796,7 +1814,10 @@ video#wp-custom-header-video {
 	content: '\f16e';
 }
 
-.social-links li a[href*="flickr.com"] {
+footer .social-links li a[href*="flickr.com"] {
+	color: #0063DB;
+}
+.social-links li a[href*="flickr.com"]:hover {
 	color: #0063DB;
 }
 
@@ -1804,7 +1825,10 @@ video#wp-custom-header-video {
 	content: '\f0e1';
 }
 
-.social-links li a[href*="linkedin.com"] {
+footer .social-links li a[href*="linkedin.com"] {
+	color: #007BB6;
+}
+.social-links li a[href*="linkedin.com"]:hover {
 	color: #007BB6;
 }
 .social-links li a:hover {
