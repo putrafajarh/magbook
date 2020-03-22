@@ -98,7 +98,7 @@ class Magbook_tab_Widgets extends WP_Widget {
 										</figure> <!-- end.post-featured-image -->
 									<?php } ?>
 									<div class="mb-content">
-										<?php the_title( sprintf( '<h3 class="mb-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h3>' ); ?>
+										<?php the_title( sprintf( '<span class="h3 mb-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></span>' ); ?>
 										<div class="mb-entry-meta">
 											<?php
 												echo '<span class="author vcard"><a href="'.get_author_posts_url( get_the_author_meta( 'ID' ) ).'" title="'.the_title_attribute('echo=0').'"><i class="fa fa-user-o"></i> ' .esc_attr(get_the_author()).'</a></span>';

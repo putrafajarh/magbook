@@ -241,10 +241,10 @@ function magbook_category_sliders() {
 					$remove_link = $magbook_settings['magbook_slider_link'];
 						if($remove_link == 0){
 
-								echo '<h2 class="slider-title"><a href="'.esc_url(get_permalink()).'" title="'.the_title_attribute('echo=0').'" rel="bookmark">'.get_the_title().'</a></h2><!-- .slider-title -->';
+								echo '<span class="h2 slider-title"><a href="'.esc_url(get_permalink()).'" title="'.the_title_attribute('echo=0').'" rel="bookmark">'.get_the_title().'</a></span><!-- .slider-title -->';
 
 						}else{
-							echo '<h2 class="slider-title">'.get_the_title().'</h2><!-- .slider-title -->';
+							echo '<span class="h2 slider-title">'.get_the_title().'</span><!-- .slider-title -->';
 						}
 
 						if ($excerpt != '') {
@@ -294,9 +294,9 @@ function magbook_category_sliders() {
 							<?php } ?>
 							<div class="sld-cat-text">
 								<header class="entry-header">		
-									<h2 class="entry-title">
+									<span class="h2 entry-title">
 										 <a href="<?php the_permalink(); ?>" title="<?php echo the_title_attribute('echo=0'); ?>"> <?php the_title();?> </a>
-									</h2>
+									</span>
 									<!-- end.entry-title -->
 									<?php if($entry_format_meta_blog != 'hide-meta' ){
 										echo  '<div class="entry-meta">';

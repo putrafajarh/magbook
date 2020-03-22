@@ -25,7 +25,7 @@ function magbook_frontpage_feature_news(){
 						<div class="wrap">
 							<?php if($magbook_feature_news_title !=''){ ?> 
 							<div class="feature-news-header">
-								<h2 class="feature-news-title"><?php echo esc_attr($magbook_feature_news_title); ?></h2>
+								<span class="h2 feature-news-title"><?php echo esc_attr($magbook_feature_news_title); ?></span>
 							</div>
 							<?php } ?> 
 							<div class="feature-news-slider">
@@ -45,9 +45,9 @@ function magbook_frontpage_feature_news(){
 											<!-- end .post-featured-image -->
 											<?php } ?>
 											<header class="entry-header">		
-												<h2 class="entry-title">
+												<span class="entry-title h2">
 													<a title="<?php the_title_attribute(); ?>" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-												</h2>
+												</span>
 												<!-- end.entry-title -->
 												<?php if($entry_format_meta_blog != 'hide-meta' ){
 													echo  '<div class="entry-meta">';

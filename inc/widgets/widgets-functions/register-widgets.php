@@ -15,8 +15,8 @@ function magbook_widgets_init() {
 			'description' => __('Shows widgets at Main Sidebar.', 'magbook'),
 			'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 			'after_widget' => '</aside>',
-			'before_title' => '<h2 class="widget-title">',
-			'after_title' => '</h2>',
+			'before_title' => '<span class="h2 widget-title">',
+			'after_title' => '</span>',
 		));
 	register_sidebar(array(
 			'name' => __('Top Header Info', 'magbook'),
@@ -24,8 +24,8 @@ function magbook_widgets_init() {
 			'description' => __('Shows widgets on all page.', 'magbook'),
 			'before_widget' => '<aside id="%1$s" class="widget widget_contact">',
 			'after_widget' => '</aside>',
-			'before_title' => '<h3 class="widget-title">',
-			'after_title' => '</h3>',
+			'before_title' => '<span class="h3 widget-title">',
+			'after_title' => '</span>',
 		));
 	register_sidebar(array(
 			'name' => __('Header Banner', 'magbook'),
@@ -33,8 +33,8 @@ function magbook_widgets_init() {
 			'description' => __('Shows widgets on header.', 'magbook'),
 			'before_widget' => '<div class="advertisement-wrap" id="%1$s">',
 			'after_widget' => '</div>',
-			'before_title' => '<h3 class="widget-title">',
-			'after_title' => '</h3>',
+			'before_title' => '<span class="h3 widget-title">',
+			'after_title' => '</span>',
 		));
 	register_sidebar(array(
 			'name' => __('Side Menu', 'magbook'),
@@ -42,8 +42,8 @@ function magbook_widgets_init() {
 			'description' => __('Shows widgets on all page.', 'magbook'),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
 			'after_widget' => '</section>',
-			'before_title' => '<h3 class="widget-title">',
-			'after_title' => '</h3>',
+			'before_title' => '<span class="h3 widget-title">',
+			'after_title' => '</span>',
 		));
 	register_sidebar(array(
 			'name' => __('Slider Section', 'magbook'),
@@ -51,8 +51,8 @@ function magbook_widgets_init() {
 			'description' => __('Use any Slider Plugins and drag that slider widgets to this Slider Section.', 'magbook'),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
 			'after_widget' => '</section>',
-			'before_title' => '<h3 class="widget-title">',
-			'after_title' => '</h3>',
+			'before_title' => '<span class="h3 widget-title">',
+			'after_title' => '</span>',
 		));
 	register_sidebar(array(
 			'name' => __('Magbook Template Section', 'magbook'),
@@ -60,8 +60,8 @@ function magbook_widgets_init() {
 			'description' => __('Shows widgets only on Magbook Template.', 'magbook'),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
 			'after_widget' => '</section>',
-			'before_title' => '<h3 class="widget-title">',
-			'after_title' => '</h3>',
+			'before_title' => '<span class="h3 widget-title">',
+			'after_title' => '</span>',
 		));
 	register_sidebar(array(
 			'name' => __('Magbook Template Sidebar Section', 'magbook'),
@@ -69,8 +69,8 @@ function magbook_widgets_init() {
 			'description' => __('Shows widgets only on Magbook Template Sidebar.', 'magbook'),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
 			'after_widget' => '</section>',
-			'before_title' => '<h3 class="widget-title">',
-			'after_title' => '</h3>',
+			'before_title' => '<span class="h3 widget-title">',
+			'after_title' => '</span>',
 		));
 	register_sidebar(array(
 			'name' => __('Contact Page Sidebar', 'magbook'),
@@ -78,8 +78,8 @@ function magbook_widgets_init() {
 			'description' => __('Shows widgets on Contact Page Template.', 'magbook'),
 			'before_widget' => '<aside id="%1$s" class="widget widget_contact">',
 			'after_widget' => '</aside>',
-			'before_title' => '<h3 class="widget-title">',
-			'after_title' => '</h3>',
+			'before_title' => '<span class="h3 widget-title">',
+			'after_title' => '</span>',
 		));
 	register_sidebar(array(
 			'name' => __('Iframe Code For Google Maps', 'magbook'),
@@ -87,8 +87,8 @@ function magbook_widgets_init() {
 			'description' => __('Add Iframe Code using text widgets', 'magbook'),
 			'before_widget' => '<div id="%1$s" class="widget %2$s">',
 			'after_widget' => '</div>',
-			'before_title' => '<h2 class="widget-title">',
-			'after_title' => '</h2>',
+			'before_title' => '<span class="h2 widget-title">',
+			'after_title' => '</span>',
 		));
 	register_sidebar(array(
 			'name' => __('WooCommerce Sidebar', 'magbook'),
@@ -96,8 +96,8 @@ function magbook_widgets_init() {
 			'description' => __('Add WooCommerce Widgets Only', 'magbook'),
 			'before_widget' => '<div id="%1$s" class="widget %2$s">',
 			'after_widget' => '</div>',
-			'before_title' => '<h2 class="widget-title">',
-			'after_title' => '</h2>',
+			'before_title' => '<span class="h2 widget-title">',
+			'after_title' => '</span>',
 		));
 	$magbook_settings = magbook_get_theme_options();
 	for($i =1; $i<= $magbook_settings['magbook_footer_column_section']; $i++){
@@ -107,8 +107,8 @@ function magbook_widgets_init() {
 			'description' => __('Shows widgets at Footer Column ', 'magbook').$i,
 			'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 			'after_widget' => '</aside>',
-			'before_title' => '<h3 class="widget-title">',
-			'after_title' => '</h3>',
+			'before_title' => '<span class="h3 widget-title">',
+			'after_title' => '</span>',
 		));
 	}
 	//Register Widget.
