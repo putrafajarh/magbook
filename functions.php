@@ -349,7 +349,9 @@ function add_author_meta() {
 	if ( is_home() ) {
 		echo "<meta name=\"author\" content=\"Kumpulan artikel kesehatan, gaya hidup serta dunia medis terkini yang terpercaya agar kualitas hidup Anda lebih baik. Menjaga lebih baik daripada mengobati, Bukan?\" />";
 	}
-	wp_enqueue_script( 'sticky-js', "https://cdnjs.cloudflare.com/ajax/libs/sticky-js/1.2.2/sticky.min.js", array(), '1', false );
+	wp_enqueue_script( 'resize-sensor', "https://abouolia.github.io/sticky-sidebar/js/ResizeSensor.js", array('jquery'), '0.9', false );
+	wp_enqueue_script( 'sticky-sidebar', "https://abouolia.github.io/sticky-sidebar/js/sticky-sidebar.js", array('jquery'), '0.9', false );
+	wp_enqueue_script( 'sticky-magbook', get_template_directory_uri() . '/js/sticky-magbook.js', array('jquery'), '0.1', true);
 }
 add_action( 'wp_enqueue_scripts', 'add_author_meta' );
 

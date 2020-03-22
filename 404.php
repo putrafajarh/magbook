@@ -7,7 +7,7 @@
  * @since Magbook 1.0
  */
 get_header(); ?>
-<div class="wrap">
+<div class="wrap wrap-main">
 	<div id="primary" class="content-area">
 	<main id="main" class="site-main" role="main">
 			<?php if ( is_active_sidebar( 'magbook_404_page' ) ) :

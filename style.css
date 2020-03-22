@@ -2074,7 +2074,6 @@ footer .social-links li a[href*="linkedin.com"] {
 ================================================== */
 #secondary {
 	float: left;
-	padding-left: 40px;
 	width: 30%;
 }
 
@@ -5590,4 +5589,11 @@ div.bbp-template-notice, div.indicator-hint {
 }
 .author-info-box .menu-item + .menu-item {
 	margin-left: 4px;
+}
+#content {
+	margin-left: 30px;
+	margin-right: 30px;
+}
+#content #primary {
+	padding-right: 40px;
 }

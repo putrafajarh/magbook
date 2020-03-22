@@ -9,7 +9,7 @@
 get_header();
 $magbook_settings = magbook_get_theme_options();
 $magbook_display_page_single_featured_image = $magbook_settings['magbook_display_page_single_featured_image']; ?>
-<div class="wrap">
+<div class="wrap wrap-main">
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 			<?php global $magbook_settings;

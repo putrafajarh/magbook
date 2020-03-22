@@ -18,7 +18,7 @@ get_header();
 	if( empty( $layout ) || is_archive() || is_search() || is_home() ) {
 		$layout = 'default';
 	} ?>
-<div class="wrap">
+<div class="wrap wrap-main">
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 		<header class="page-header">
