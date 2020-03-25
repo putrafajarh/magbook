@@ -116,7 +116,7 @@ class Magbook_category_box_Widgets extends WP_Widget {
 			<div class="box-layout-<?php echo absint($category_box_class);?>">
 			<?php
 			if ( $title!='' || $link!='' ){ ?>
-				<h2 class="widget-title">
+				<span class="h2 widget-title">
 					<?php if ( $title != '' ){ ?>
 						<span><?php echo esc_html($title); ?></span>
 					<?php } 
@@ -124,7 +124,7 @@ class Magbook_category_box_Widgets extends WP_Widget {
 					
 					<a href="<?php echo esc_url($link);?>" class="more-btn"><?php echo esc_attr($magbook_tag_text); ?></a>
 					<?php } ?>
-				</h2><!-- end .widget-title -->
+				</span><!-- end .widget-title -->
 			<?php	} ?>
 				<div class="cat-box-wrap clearfix">
 					<?php

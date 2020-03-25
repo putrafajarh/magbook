@@ -243,11 +243,11 @@ if ($magbook_header_display == 'header_logo' || $magbook_header_display == 'head
 			}
 			echo '<div id="site-detail">';
 				if (is_home() || is_front_page()){ ?>
-				<h1 id="site-title"> <?php }else{?> <h2 id="site-title"> <?php } ?>
+				<h1 id="site-title"> <?php }else{?> <span id="site-title"> <?php } ?>
 				<a href="<?php echo esc_url(home_url('/'));?>" title="<?php echo esc_html(get_bloginfo('name', 'display'));?>" rel="home"> <?php bloginfo('name');?> </a>
 				<?php if(is_home() || is_front_page()){ ?>
 				</h1>  <!-- end .site-title -->
-				<?php } else { ?> </h2> <!-- end .site-title --> <?php }
+				<?php } else { ?> </span> <!-- end .site-title --> <?php }
 
 				$site_description = get_bloginfo( 'description', 'display' );
 				if ($site_description){?>

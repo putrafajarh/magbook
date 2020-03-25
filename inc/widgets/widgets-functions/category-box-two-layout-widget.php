@@ -166,7 +166,7 @@ class Magbook_category_box_two_column_Widgets extends WP_Widget {
 					<div class="widget widget-cat-box-left">
 						<?php
 						if ( $title!='' || $link!='' ){ ?>
-							<h2 class="widget-title">
+							<span class="h2 widget-title">
 								<?php if ( $title != '' ){ ?>
 									<span><?php echo esc_html($title); ?></span>
 								<?php } 
@@ -174,7 +174,7 @@ class Magbook_category_box_two_column_Widgets extends WP_Widget {
 								
 								<a href="<?php echo esc_url($link);?>" class="more-btn"><?php echo esc_attr($magbook_tag_text); ?></a>
 								<?php } ?>
-							</h2>
+							</span>
 						<?php	}
 					
 						$i=1;
@@ -239,7 +239,7 @@ class Magbook_category_box_two_column_Widgets extends WP_Widget {
 					<div class="widget widget-cat-box-right">
 						<?php
 						if ( $title2!='' || $link2!='' ){ ?>
-							<h2 class="widget-title">
+							<span class="h2 widget-title">
 								<?php if ( $title2 != '' ){ ?>
 									<span><?php echo esc_html($title2); ?></span>
 								<?php } 
@@ -247,7 +247,7 @@ class Magbook_category_box_two_column_Widgets extends WP_Widget {
 								
 								<a href="<?php echo esc_url($link2);?>" class="more-btn"><?php echo esc_attr($magbook_tag_text); ?></a>
 								<?php } ?>
-							</h2>
+							</span>
 						<?php	}
 					
 						$j=1;
