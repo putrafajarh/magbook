@@ -439,3 +439,12 @@ add_filter('the_time', 'magbook_time_ago');
 add_filter( 'locale', function() {
     return 'id_ID';
 });
+
+
+add_filter('navigation_markup_template', function() {
+	return '
+	<nav class="navigation %1$s" role="navigation" aria-label="%4$s">
+		<span class="screen-reader-text">%2$s</span>
+		<div class="nav-links">%3$s</div>
+	</nav>';
+});
