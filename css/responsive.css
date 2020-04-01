@@ -275,6 +275,10 @@
 		font-size: 16px;
 		line-height: 1.437;
 	}
+
+	.inner-wrapper-sticky {
+		display: none !important;
+	}
 }
 
 /* All size smaller than 981px
