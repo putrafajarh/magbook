@@ -993,6 +993,38 @@
 	.site-info #site-branding {
 		max-width: 100%;
 	}
+	#main > .page-header {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	#content {
+		padding-top: 20px;
+	}
+	#main h1.entry-title {
+		font-size: 28px;
+	}
+	.entry-content {
+		letter-spacing: .1px;
+	}
+	.entry-content h2 {
+		font-size: 22px;
+	}
+	.entry-content h3 {
+		font-size: 18px;
+	}
+	.author-info-box {
+		padding: 8px;
+	}
+	.author-info-box .author-avatar img {
+		width: 64px !important;
+		height: auto !important;
+	}
+	.author-info-box .author-desc {
+		margin-left: 79px;
+	}
+	.nav-links .post-title {
+		font-size: 15px;
+	}
 }
 
 /* All Mobile Screen ( smaller than 481px )
@@ -1084,5 +1116,44 @@
 	.boxed-layout-small #page,
 	.boxed-layout-small .wrap {
 		width: 96%;
+	}
+}
+
+
+@media only screen and (max-width: 767px) {
+	.entry-content {
+		font-size: 16px;
+	}
+	.sticky-wrapper {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		z-index: 9999;
+		border-bottom: 4px solid #0b4883;
+	}
+	.feature-news-box {
+		display: none;
+	}
+	.main-navigation {
+		margin-right: 0;
+	}
+	body.archive .entry-content {
+		display: none;
+	}
+	body.archive article + article {
+		margin-top: 25px;
+	}
+	body.archive .entry-meta > .posted-on, body.archive .entry-meta > .tag-links {
+		margin-bottom: 0;
+	}
+	body.archive .entry-meta > .comments {
+		display: none;
+	}
+	body.archive h2.entry-title {
+		margin-bottom: 6px;
+	}
+	body.home .box-layout-2 .entry-content {
+		display: none;
 	}
 }
