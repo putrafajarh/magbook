@@ -1156,7 +1156,7 @@
 	body.home .box-layout-2 .entry-content {
 		display: none;
 	}
-	.glowing-desktop {
+	.glowing-desktop-container, .glowing-desktop {
 		display: none;
 	}
 }
