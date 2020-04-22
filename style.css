@@ -5623,3 +5623,29 @@ div.bbp-template-notice, div.indicator-hint {
 		padding-right: 40px;
 	}
 }
+.mobile-wrapper {
+	display: flex;
+	justify-content: space-between;
+}
+.glowing {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #fbaa32, 0 0 30px #fbaa32, 0 0 40px #fbaa32, 0 0 55px #fbaa32, 0 0 75px #fbaa32;
+}
+.glowing-desktop {
+	padding: 2px 6px;
+	background: #fbaa32;
+	color: #fff;
+	text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #fbaa32, 0 0 30px #fbaa32, 0 0 40px #fbaa32, 0 0 55px #fbaa32, 0 0 75px #fbaa32;
+	border-radius: 30px;
+}
+.main-header .menu-kanan {
+	display: flex;
+	align-items: center;
+}
+.main-header .menu-kanan a {
+	background-color: #fbaa32;
+	color: #fff;
+	padding: 2px 6px !important;
+	margin-left: auto;
+	border-radius: 30px;
+	float: right;
+}

@@ -96,10 +96,22 @@ wp_head(); ?>
 									'container'      => '',
 									'items_wrap'     => '<ul id="primary-menu" class="menu nav-menu">%3$s</ul>',
 									); ?>
-								
+									<?php if (wp_is_mobile()) { ?>
+									<div class="mobile-wrapper">
+										<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+											<span class="line-bar"></span>
+										</button><!-- end .menu-toggle -->
+										<div class="menu-kanan">
+											<a class="glowing" href="https://www.triasse.com/ads/paket-tes-virus-corona-covid19/?utm_medium=navbar_mobile&utm_source=blog_artikel&utm_campaign=referral_link" target="_blank">
+												Tes Covid19
+											</a>
+										</div>
+									</div>
+									<?php } else { ?>
 									<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
 										<span class="line-bar"></span>
 									</button><!-- end .menu-toggle -->
+									<?php } ?>
 									<?php wp_nav_menu($args);//extract the content from apperance-> nav menu
 									} else {// extract the content from page menu only ?>
 									<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
@@ -112,6 +124,9 @@ wp_head(); ?>
 
 							$search_form = $magbook_settings['magbook_search_custom_header'];
 							if (1 != $search_form) { ?>
+								<a class="glowing-desktop" href="https://www.triasse.com/ads/paket-tes-virus-corona-covid19/?utm_medium=navbar_mobile&utm_source=blog_artikel&utm_campaign=referral_link" target="_blank">
+									Tes Covid19
+								</a>
 								<button id="search-toggle" class="header-search" type="button"></button>
 								<div id="search-box" class="clearfix">
 									<?php get_search_form();?>
