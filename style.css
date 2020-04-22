@@ -1857,7 +1857,7 @@ footer .social-links li a[href*="linkedin.com"] {
 ================================================== */
 .main-navigation {
 	float: left;
-	margin-right: 80px;
+	margin-right: 15px;
 }
 
 .main-navigation > ul > li {
@@ -5628,21 +5628,28 @@ div.bbp-template-notice, div.indicator-hint {
 	justify-content: space-between;
 }
 .glowing {
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #fbaa32, 0 0 30px #fbaa32, 0 0 40px #fbaa32, 0 0 55px #fbaa32, 0 0 75px #fbaa32;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #4169e0, 0 0 30px #4169e0, 0 0 40px #4169e0, 0 0 55px #4169e0, 0 0 75px #4169e0;
 }
 .glowing-desktop {
-	padding: 2px 6px;
-	background: #fbaa32;
+	padding: 4px 12px;
+	background: #4169e0;
 	color: #fff;
-	text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #fbaa32, 0 0 30px #fbaa32, 0 0 40px #fbaa32, 0 0 55px #fbaa32, 0 0 75px #fbaa32;
+	text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #4169e0, 0 0 30px #4169e0, 0 0 40px #4169e0, 0 0 55px #4169e0, 0 0 75px #4169e0;
 	border-radius: 30px;
+	font-size: 16px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.glowing-desktop-container {
+	float: left;
+	padding: 12px 0;
 }
 .main-header .menu-kanan {
 	display: flex;
 	align-items: center;
 }
 .main-header .menu-kanan a {
-	background-color: #fbaa32;
+	background-color: #4169e0;
 	color: #fff;
 	padding: 2px 6px !important;
 	margin-left: auto;

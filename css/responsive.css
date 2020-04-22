@@ -1156,4 +1156,7 @@
 	body.home .box-layout-2 .entry-content {
 		display: none;
 	}
+	.glowing-desktop {
+		display: none;
+	}
 }

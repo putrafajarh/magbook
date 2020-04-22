@@ -124,9 +124,11 @@ wp_head(); ?>
 
 							$search_form = $magbook_settings['magbook_search_custom_header'];
 							if (1 != $search_form) { ?>
-								<a class="glowing-desktop" href="https://www.triasse.com/ads/paket-tes-virus-corona-covid19/?utm_medium=navbar_mobile&utm_source=blog_artikel&utm_campaign=referral_link" target="_blank">
-									Tes Covid19
-								</a>
+								<div class="glowing-desktop-container">
+									<a class="glowing-desktop" href="https://www.triasse.com/ads/paket-tes-virus-corona-covid19/?utm_medium=navbar_dekstop&utm_source=blog_artikel&utm_campaign=referral_link" target="_blank">
+										Tes Covid-19
+									</a>
+								</div>
 								<button id="search-toggle" class="header-search" type="button"></button>
 								<div id="search-box" class="clearfix">
 									<?php get_search_form();?>
