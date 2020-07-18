@@ -394,7 +394,7 @@ function magbook_scripts() {
 	);
 	wp_enqueue_script( 'magbook-slider' );
 	if( $magbook_settings['magbook_responsive'] == 'on' ) {
-		wp_enqueue_style('magbook-responsive', get_template_directory_uri().'/css/responsive.css');
+		wp_enqueue_style('magbook-responsive', get_template_directory_uri().'/css/responsive.css', [], '0.0.1');
 	}
 	/********* Adding Multiple Fonts ********************/
 	$magbook_googlefont = array();
