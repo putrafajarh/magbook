@@ -49,8 +49,8 @@ jQuery( document ).ready(function($) {
 
 	$('.feature-news-slider').flexslider({
 		animation: "slide",
-		animationLoop: true,
-		slideshow: true,
+		animationLoop: false,
+		slideshow: false,
 		controlNav: false,
 		smoothHeight: false,
 		slideshowSpeed: 5000,

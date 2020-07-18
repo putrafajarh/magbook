@@ -17,7 +17,7 @@ function magbook_frontpage_feature_news(){
 	$magbook_disable_feature_news = $magbook_settings['magbook_disable_feature_news'];
 	$query = new WP_Query(array(
 			'posts_per_page' =>  intval($magbook_settings['magbook_total_feature_news']),
-			'post_type'					=> 'post',
+			'post_type'					=> 'partner',
 			'category_name' => esc_attr($magbook_settings['magbook_featured_news_category']),
 	));
 	if($magbook_disable_feature_news !=1){ ?>
@@ -25,38 +25,38 @@ function magbook_frontpage_feature_news(){
 						<div class="wrap">
 							<?php if($magbook_feature_news_title !=''){ ?> 
 							<div class="feature-news-header">
-								<span class="h2 feature-news-title"><?php echo esc_attr($magbook_feature_news_title); ?></span>
+								<span class="h2 feature-news-title">Our Partners</span>
 							</div>
 							<?php } ?> 
 							<div class="feature-news-slider">
-								<ul class="slides">
+								<ul class="slides partner-slider">
 									<?php while ($query->have_posts()):$query->the_post(); ?>
 									<li>
 										<article id="post-<?php the_ID(); ?>" <?php post_class();?>>
 											<?php if(has_post_thumbnail() ){ ?>
 											<figure class="post-featured-image">
-												<a title="<?php the_title_attribute(); ?>" href="<?php the_permalink(); ?>"><?php the_post_thumbnail('magbook-featured-image'); ?></a>
-												<?php if($entry_format_meta_blog != 'hide-meta' ){
-													echo  '<div class="entry-meta">';
-														do_action('magbook_post_categories_list_id');
-													echo '</div> <!-- end .entry-meta -->';
-												} ?>
+												<?php
+													$url = '#';
+													if (get_field('url')) {
+														$url = get_field('url');
+													}
+													$newtab = "_self";
+													if (get_field('new_tab') && get_field('url')) {
+														$newtab = "_blank";
+													}
+													$rel = get_field('link_rel');
+												?>
+												<a title="<?php the_title_attribute(); ?>" rel="<?php echo $rel; ?>" target="<?php echo $newtab; ?>" href="<?php echo $url; ?>"><?php the_post_thumbnail('magbook-featured-image'); ?></a>
 											</figure>
 											<!-- end .post-featured-image -->
 											<?php } ?>
 											<header class="entry-header">		
 												<span class="entry-title h2">
-													<a title="<?php the_title_attribute(); ?>" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+													<a title="<?php the_title_attribute(); ?>" rel="<?php echo $rel; ?>" target="<?php echo $newtab; ?>" href="<?php echo $url; ?>"><?php the_title(); ?></a>
 												</span>
 												<!-- end.entry-title -->
 												<?php if($entry_format_meta_blog != 'hide-meta' ){
 													echo  '<div class="entry-meta">';
-													echo '<span class="author vcard"><a href="'.get_author_posts_url( get_the_author_meta( 'ID' ) ).'" title="'.the_title_attribute('echo=0').'"><i class="fa fa-user-o"></i> ' .esc_attr(get_the_author()).'</a></span>';
-														printf( '<span class="posted-on"><a href="%1$s" title="%2$s"><i class="fa fa-calendar-o"></i> %3$s</a></span>',
-																		esc_url(get_the_permalink()),
-																		esc_attr( get_the_time(get_option( 'date_format' )) ),
-																		esc_attr( magbook_time_ago() )
-																	);
 													echo  '</div> <!-- end .entry-meta -->';
 												} ?>
 											</header>

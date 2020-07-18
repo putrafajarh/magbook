@@ -5656,3 +5656,11 @@ div.bbp-template-notice, div.indicator-hint {
 	border-radius: 30px;
 	float: right;
 }
+
+.partner-slider img {
+	width: 200px;
+	height: auto;
+}
+.partner-slider li {
+	width: 200px;
+}
