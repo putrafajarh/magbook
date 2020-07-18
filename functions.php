@@ -99,9 +99,10 @@ function magbook_setup() {
  * Load WooCommerce compatibility files.
  */
 	
-require get_template_directory() . '/woocommerce/functions.php';
+	require get_template_directory() . '/woocommerce/functions.php';
 
-
+	remove_action( 'admin_menu', 'cptui_plugin_menu' );
+	add_filter('acf/settings/show_admin', '__return_false');
 }
 endif; // magbook_setup
 add_action( 'after_setup_theme', 'magbook_setup' );
